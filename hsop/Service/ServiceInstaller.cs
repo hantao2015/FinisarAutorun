@@ -45,7 +45,7 @@
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            m_servicexlm.Load( "d:\\config.xml");
+            m_servicexlm.Load( "c:\\config.xml");
             m_servicename = Convert.ToString(m_servicexlm.DocumentElement.SelectSingleNode("//ShinemayServiceName").InnerText);
             this.ServiceProcessInstaller1 = new ServiceProcessInstaller();
             this.ServiceInstaller1 = new System.ServiceProcess.ServiceInstaller();
