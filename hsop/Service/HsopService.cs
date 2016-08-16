@@ -59,7 +59,7 @@
             
 
 
-            m_servicexlm.Load("d:\\config.xml");
+            m_servicexlm.Load("c:\\config.xml");
             m_servicename = Convert.ToString(m_servicexlm.DocumentElement.SelectSingleNode("//ShinemayServiceName").InnerText); 
             ServiceBase.Run(new ServiceBase[] { new ShinemayService() });
         }
